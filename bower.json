@@ -1,0 +1,23 @@
+{
+  "name": "ngGoogleStaticMaps",
+  "version": "0.1.0",
+  "homepage": "https://github.com/duartepatriani/ngGoogleStaticMaps",
+  "authors": [
+    "LUIZ PATRIANI <duartepatriani@gmail.com>"
+  ],
+  "description": "AngularJS directive for Google Static Maps",
+  "main": "ngGoogleStaticMaps.min.js",
+  "keywords": [
+    "AngularJs",
+    "Google",
+    "Maps"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

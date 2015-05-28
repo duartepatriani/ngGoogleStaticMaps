@@ -1,0 +1,27 @@
+{
+  "name": "ngGoogleStaticMaps",
+  "version": "0.1.0",
+  "description": "Directive For Google Static Maps",
+  "main": "",
+  "dependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-bookmarkify": "^0.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://duartepatriani@github.com/duartepatriani/ngGoogleStaticMaps.git"
+  },
+  "author": "Luiz Patriani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duartepatriani/ngGoogleStaticMaps/issues"
+  },
+  "homepage": "https://github.com/duartepatriani/ngGoogleStaticMaps"
+}
