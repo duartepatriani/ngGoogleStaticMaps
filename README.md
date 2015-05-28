@@ -16,6 +16,8 @@ See the [Homepage](http://duartepatriani.github.io/ngGoogleStaticMaps)
 <static-map map-width="400" map-height="400" zoom="14" address="eiffel tower"></static-map>
 ```
 
+<img alt="eiffel tower" src="//maps.googleapis.com/maps/api/staticmap?center=eiffel%20tower&amp;size=400x400&amp;zoom=14&amp;markers=color:red|eiffel%20tower">
+
 ## Attributes
 
 ### `address` (required)
