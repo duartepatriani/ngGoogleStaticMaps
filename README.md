@@ -13,7 +13,7 @@ AngularJS directive for Google Static Maps.
 See the [live demo](http://duartepatriani.github.io/ngGoogleStaticMaps)
 
 ```html
-<static-gmap size="137x137" markers="markers" sensor="false" zoom="14"></static-gmap>
+<static-map map-width="400" map-height="400" zoom="14" address="eiffel tower"></static-map>
 ```
 
 ## Attributes
