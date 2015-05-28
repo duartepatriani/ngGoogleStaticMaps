@@ -1,6 +1,8 @@
 # ngGoogleStaticMaps
 AngularJS directive for Google Static Maps.
 
+See the [Homepage](http://duartepatriani.github.io/ngGoogleStaticMaps)
+
 ## Usage
 
 1. `bower install --save ngGoogleStaticMaps`
@@ -9,8 +11,6 @@ AngularJS directive for Google Static Maps.
 4. Use the `static-map` directive.
 
 ## Example
-
-See the [live demo](http://duartepatriani.github.io/ngGoogleStaticMaps)
 
 ```html
 <static-map map-width="400" map-height="400" zoom="14" address="eiffel tower"></static-map>
