@@ -38,7 +38,7 @@ The map-width attribute is required and must be specified in px
 
 ### `zoom` (optional) (default:14)
 
-The sensor attribute must explicitly be set to either `true` or `false`.
+Maps on Google Maps have an integer 'zoom level' which defines the resolution of the current view. Zoom levels between 0 (the lowest zoom level, in which the entire world can be seen on one map) and 21+ (down to streets and individual buildings) are possible within the default roadmap view. Building outlines, where available, appear on the map around zoom level 17. This value differs from area to area and can change over time as the data evolves.
 
 ## Contributing
 
