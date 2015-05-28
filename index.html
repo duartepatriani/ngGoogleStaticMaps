@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>ngGoogleStaticMaps by duartepatriani</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>ngGoogleStaticMaps</h1>
+        <h2>AngularJS directive for Google Static Maps.</h2>
+        <a href="https://github.com/duartepatriani/ngGoogleStaticMaps" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="nggooglestaticmaps" class="anchor" href="#nggooglestaticmaps" aria-hidden="true"><span class="octicon octicon-link"></span></a>ngGoogleStaticMaps</h1>
+
+<p>AngularJS directive for Google Static Maps.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ol>
+<li><code>bower install --save ngGoogleStaticMaps</code></li>
+<li>Include bower_componets/ngGoogleStatisMaps/ngGoogleStaticMaps.min.js in your HTML.</li>
+<li>Load the <code>ngGoogleStaticMaps</code> module for your Angular app.</li>
+<li>Use the <code>static-map</code> directive.</li>
+</ol>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<p>See the <a href="http://duartepatriani.github.io/ngGoogleStaticMaps">live demo</a></p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">static</span><span class="pl-e">-map</span> <span class="pl-e">map-width</span>=<span class="pl-s"><span class="pl-pds">"</span>400<span class="pl-pds">"</span></span> <span class="pl-e">map-height</span>=<span class="pl-s"><span class="pl-pds">"</span>400<span class="pl-pds">"</span></span> <span class="pl-e">zoom</span>=<span class="pl-s"><span class="pl-pds">"</span>14<span class="pl-pds">"</span></span> <span class="pl-e">address</span>=<span class="pl-s"><span class="pl-pds">"</span>eiffel tower<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">static</span><span class="pl-e">-map</span>&gt;</pre></div>
+
+<h2>
+<a id="attributes" class="anchor" href="#attributes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attributes</h2>
+
+<h3>
+<a id="address-required" class="anchor" href="#address-required" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<code>address</code> (required)</h3>
+
+<p>People don't speak in latitudes and longitudes; they know addresses. but you can use either address or latitudes/longitudes</p>
+
+<pre><code>address='40.714728,-73.998672'
+or
+address='City+Hall,New+York,NY'
+</code></pre>
+
+<h3>
+<a id="map-width-required" class="anchor" href="#map-width-required" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<code>map-width</code> (required)</h3>
+
+<p>The map-width attribute is required and must be specified in px</p>
+
+<h3>
+<a id="map-height-required" class="anchor" href="#map-height-required" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<code>map-height</code> (required)</h3>
+
+<p>The map-width attribute is required and must be specified in px</p>
+
+<h3>
+<a id="zoom-optional-default14" class="anchor" href="#zoom-optional-default14" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<code>zoom</code> (optional) (default:14)</h3>
+
+<p>Maps on Google Maps have an integer 'zoom level' which defines the resolution of the current view. Zoom levels between 0 (the lowest zoom level, in which the entire world can be seen on one map) and 21+ (down to streets and individual buildings) are possible within the default roadmap view. Building outlines, where available, appear on the map around zoom level 17. This value differs from area to area and can change over time as the data evolves.</p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Pull requests welcome. Only change files in <code>src</code></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/duartepatriani/ngGoogleStaticMaps/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/duartepatriani/ngGoogleStaticMaps/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/duartepatriani/ngGoogleStaticMaps"></a> is maintained by <a href="https://github.com/duartepatriani">duartepatriani</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
