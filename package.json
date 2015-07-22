@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "description": "Directive For Google Static Maps",
   "main": "",
-  "dependencies": {
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.0.1"
-  },
   "devDependencies": {
     "gulp": "^3.8.10",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.0.1",
     "gulp-bookmarkify": "^0.1.1"
   },
   "scripts": {
@@ -19,6 +17,13 @@
     "url": "https://duartepatriani@github.com/duartepatriani/ngGoogleStaticMaps.git"
   },
   "author": "Luiz Patriani",
+	"contributors": [
+		{
+			"name": "Vinicius Salvati Melquiades",
+			"email": "vinicius.melquiades@outlook.com",
+			"url": "https://github.com/viniciusmelquiades"
+		}
+	],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/duartepatriani/ngGoogleStaticMaps/issues"
