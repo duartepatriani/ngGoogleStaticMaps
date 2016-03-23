@@ -16,6 +16,14 @@ See the [Homepage](http://duartepatriani.github.io/ngGoogleStaticMaps)
 <static-map map-width="400" map-height="400" zoom="14" address="eiffel tower"></static-map>
 ```
 
+## Provider
+
+```
+myApp.config(["staticMapProvider", function(staticMapProvider) {
+	staticMapProvider.useApiKey("YOUR_KEY");
+}]);
+```
+
 ## Attributes
 
 ### `address` (required)

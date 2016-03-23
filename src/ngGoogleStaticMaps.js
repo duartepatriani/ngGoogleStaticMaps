@@ -2,6 +2,11 @@
 	function StaticMapProvider() {
 
 		var _protocol;
+		var _apiKey;
+		
+		this.useApiKey = function (key) {
+			_apiKey = key;
+		}
 
 		this.forceProtocol = function (protocol) {
 			if (angular.isString(protocol)) {
@@ -17,6 +22,9 @@
 			return {
 				getProtocol: function () {
 					return _protocol || '';
+				},
+				getApiKey: function(){
+					return _apiKey || '';
 				}
 			};
 		}];
@@ -57,13 +65,16 @@
 			var sizeParam = "&size=" + attrs.mapWidth + "x" + attrs.mapHeight;
 			var endEncoding = encodeURIComponent(attrs.address);
 			var markerParam = "&markers=color:red|" + endEncoding;
-
+			var keyParam = "&key=" + staticMap.getApiKey();
+			
 			el.alt = attrs.address;
-			el.src = urlBase + endEncoding + sizeParam + zoomParam + markerParam;
+			el.src = urlBase + endEncoding + sizeParam + zoomParam + markerParam + keyParam;
 		}
 		return directive;
 	}
 
 	angular.module('ngGoogleStaticMaps', []).provider('staticMap', StaticMapProvider).directive('staticMap', GoogleStaticMaps);
+
+	
 
 } ());
