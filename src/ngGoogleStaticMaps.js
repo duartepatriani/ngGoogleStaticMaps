@@ -59,7 +59,14 @@
 			} else {
 				zoomParam += attrs.zoom
 			}
-
+			
+			var scaleParam = "&scale=";
+			if (!attrs.mapScale) {
+				scaleParam += "1"
+			} else {
+				scaleParam += attrs.mapScale
+			}
+			
 			var urlBase = staticMap.getProtocol() + '//maps.googleapis.com/maps/api/staticmap?center=';
 
 			var sizeParam = "&size=" + attrs.mapWidth + "x" + attrs.mapHeight;
@@ -68,7 +75,7 @@
 			var keyParam = "&key=" + staticMap.getApiKey();
 			
 			el.alt = attrs.address;
-			el.src = urlBase + endEncoding + sizeParam + zoomParam + markerParam + keyParam;
+			el.src = urlBase + endEncoding + sizeParam + zoomParam + markerParam + scaleParam + keyParam;
 		}
 		return directive;
 	}
