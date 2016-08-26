@@ -37,6 +37,9 @@
 			template: '<img alt="Google Static Map">',
 			replace: true,
 			restrict: 'E',
+			scope:{
+				mapStyles: "="
+			}
 		};
 		function link(scope, element, attrs) {
 			var el = element[0];
@@ -53,11 +56,19 @@
 				throw new Error('The `address` is required.');
 			}
 
+      
 			var zoomParam = "&zoom=";
 			if (!attrs.zoom) {
 				zoomParam += "14"
 			} else {
 				zoomParam += attrs.zoom
+			}
+			
+			var stylesParam="";
+			if(attrs.mapStyles){
+			  attrs.mapStyles.forEach(function(el){
+			    stylesParam+="&style="+el  
+			  })
 			}
 			
 			var scaleParam = "&scale=";
@@ -75,7 +86,7 @@
 			var keyParam = "&key=" + staticMap.getApiKey();
 			
 			el.alt = attrs.address;
-			el.src = urlBase + endEncoding + sizeParam + zoomParam + markerParam + scaleParam + keyParam;
+			el.src = urlBase + endEncoding + sizeParam + zoomParam + markerParam + scaleParam + stylesParam + keyParam;
 		}
 		return directive;
 	}
