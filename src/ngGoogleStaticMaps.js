@@ -38,7 +38,7 @@
 			replace: true,
 			restrict: 'E',
 			scope:{
-				mapStyles: "="
+				styles: "="
 			}
 		};
 		function link(scope, element, attrs) {
@@ -63,10 +63,10 @@
 			} else {
 				zoomParam += attrs.zoom
 			}
-			
+			    
 			var stylesParam="";
-			if(attrs.mapStyles){
-			  attrs.mapStyles.forEach(function(el){
+			if(scope.styles){
+			  scope.styles.forEach(function(el){
 			    stylesParam+="&style="+el  
 			  })
 			}
