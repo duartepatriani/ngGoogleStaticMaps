@@ -37,6 +37,9 @@
 			template: '<img alt="Google Static Map">',
 			replace: true,
 			restrict: 'E',
+			scope:{
+				styles: "="
+			}
 		};
 		function link(scope, element, attrs) {
 			var el = element[0];
@@ -53,13 +56,28 @@
 				throw new Error('The `address` is required.');
 			}
 
+      
 			var zoomParam = "&zoom=";
 			if (!attrs.zoom) {
 				zoomParam += "14"
 			} else {
 				zoomParam += attrs.zoom
 			}
-
+			    
+			var stylesParam="";
+			if(scope.styles){
+			  scope.styles.forEach(function(el){
+			    stylesParam+="&style="+el  
+			  })
+			}
+			
+			var scaleParam = "&scale=";
+			if (!attrs.mapScale) {
+				scaleParam += "1"
+			} else {
+				scaleParam += attrs.mapScale
+			}
+			
 			var urlBase = staticMap.getProtocol() + '//maps.googleapis.com/maps/api/staticmap?center=';
 
 			var sizeParam = "&size=" + attrs.mapWidth + "x" + attrs.mapHeight;
@@ -68,7 +86,7 @@
 			var keyParam = "&key=" + staticMap.getApiKey();
 			
 			el.alt = attrs.address;
-			el.src = urlBase + endEncoding + sizeParam + zoomParam + markerParam + keyParam;
+			el.src = urlBase + endEncoding + sizeParam + zoomParam + markerParam + scaleParam + stylesParam + keyParam;
 		}
 		return directive;
 	}
